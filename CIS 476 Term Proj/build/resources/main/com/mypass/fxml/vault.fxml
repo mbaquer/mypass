@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.mypass.controllers.VaultController" styleClass="vbox">
+    <MenuBar styleClass="menu-bar">
+        <Menu text="File" styleClass="menu">
+            <MenuItem text="Logout" onAction="#handleLogout" styleClass="menu-item"/>
+        </Menu>
+    </MenuBar>
+
+    <TableView fx:id="vaultTable" styleClass="table-view">
+        <columns>
+            <TableColumn text="Type" fx:id="colType" styleClass="table-column"/>
+            <TableColumn text="Email" fx:id="colEmail" styleClass="table-column"/>
+            <TableColumn text="Username" fx:id="colUsername" styleClass="table-column"/>
+            <TableColumn text="Password" fx:id="colPassword" styleClass="table-column"/>
+            <TableColumn text="Card Number" fx:id="colCardNumber" styleClass="table-column"/>
+            <TableColumn text="Expiration Date" fx:id="colCardExpiration" styleClass="table-column"/>
+            <TableColumn text="CVV" fx:id="colCVV" styleClass="table-column"/>
+        </columns>
+    </TableView>
+
+    <HBox spacing="10.0">
+        <Button text="Add" onAction="#handleAdd" styleClass="button"/>
+        <Button text="Edit" onAction="#handleEdit" styleClass="button"/>
+        <Button text="Delete" onAction="#handleDelete" styleClass="button"/>
+    </HBox>
+</VBox>

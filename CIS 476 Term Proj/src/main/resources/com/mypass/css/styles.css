@@ -1,0 +1,110 @@
+.root {
+    -fx-font-family: 'Arial';
+    -fx-font-size: 14px;
+    -fx-background-color: #f9f9f9;
+}
+
+.label {
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+}
+
+.text-field, .password-field {
+    -fx-pref-width: 250px;
+    -fx-border-color: #dddddd;
+    -fx-border-radius: 5px;
+    -fx-padding: 5px;
+    -fx-background-radius: 5px;
+    -fx-background-color: white;
+}
+
+.text-field:focused, .password-field:focused {
+    -fx-border-color: #00aaff;
+    -fx-background-color: #e6f7ff;
+}
+
+.button {
+    -fx-background-color: #00aaff;
+    -fx-text-fill: white;
+    -fx-pref-height: 40px;
+    -fx-pref-width: 120px;
+    -fx-background-radius: 5px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box , rgba(0,0,0,0.3) , 5, 0.0 , 0 , 1);
+}
+
+.button:hover {
+    -fx-background-color: #0088cc;
+}
+
+.button:pressed {
+    -fx-background-color: #006699;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 2, 0.0, 0, 1);
+}
+
+/* VBox Styling */
+.vbox {
+    -fx-alignment: center;
+    -fx-spacing: 15;
+    -fx-padding: 30;
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 10, 0.0, 0, 5);
+}
+
+/* HBox Styling */
+.hbox {
+    -fx-spacing: 10;
+    -fx-padding: 10;
+}
+
+/* MenuBar Styling */
+.menu-bar {
+    -fx-background-color: #333333;
+    -fx-text-fill: white;
+}
+
+.menu {
+    -fx-text-fill: white;
+}
+
+.menu-item {
+    -fx-background-color: #333333;
+    -fx-text-fill: white;
+}
+
+.menu-item:hover {
+    -fx-background-color: #444444;
+}
+
+/* TableView Styling */
+.table-view {
+    -fx-pref-width: 600px;
+    -fx-pref-height: 300px;
+    -fx-border-color: #dddddd;
+    -fx-border-radius: 5px;
+    -fx-background-color: #ffffff;
+}
+
+.table-column {
+    -fx-alignment: center-left;
+    -fx-text-fill: #333333;
+}
+
+.table-row-cell:even {
+    -fx-background-color: #ffffff;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #f9f9f9;
+}
+
+.table-cell {
+    -fx-padding: 10px;
+}
+
+.table-cell:selected {
+    -fx-background-color: #00aaff;
+    -fx-text-fill: white;
+}

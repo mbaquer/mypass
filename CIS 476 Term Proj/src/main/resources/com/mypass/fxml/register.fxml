@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox alignment="CENTER" spacing="10.0" xmlns:fx="http://javafx.com/fxml" fx:controller="com.mypass.controllers.RegisterController">
+    <TextField fx:id="txtEmail" promptText="Email" />
+    <PasswordField fx:id="txtPassword" promptText="Master Password" onKeyReleased="#handlePasswordKeyRelease"/>
+    <ProgressBar fx:id="passwordStrength" progress="0" visible="false"/>
+    <PasswordField fx:id="txtConfirmPassword" promptText="Confirm Password" />
+    <TextField fx:id="txtSecurity1" promptText="Security Question 1" />
+    <TextField fx:id="txtAnswer1" promptText="Answer 1" />
+    <TextField fx:id="txtSecurity2" promptText="Security Question 2" />
+    <TextField fx:id="txtAnswer2" promptText="Answer 2" />
+    <TextField fx:id="txtSecurity3" promptText="Security Question 3" />
+    <TextField fx:id="txtAnswer3" promptText="Answer 3" />
+    <Button text="Register" onAction="#handleRegister" />
+</VBox>
